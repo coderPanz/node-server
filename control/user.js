@@ -22,14 +22,24 @@ exports.list = async (req, res) => {
 // 创建用户
 exports.create = async (req, res) => {
   try {
-    let { name, password } = req.body;
+    let { name, password, roles, department } = req.body;
     password = md5(password)
-    const data = await userModel.create({ name: name, password: password });
+    if(!roles) roles = '64ad26d324fe1ef5db5f948b' // 表示'暂无部门'
+    if(!department) department = '64ad26d324fe1ef5db5f948b' 
+
+    const data = await userModel.create({
+      name: name,
+      password: password,
+      rolesId: roles,
+      departmentId: department
+    });
+
     if (!data) return res.status(500).json({ msg: '创建失败!' });
     res.status(201).json({
       msg: '创建成功!',
       data: data
     });
+    
   } catch (error) {
     res.json({
       msg: '创建失败!',
