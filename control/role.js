@@ -39,9 +39,9 @@ exports.create = async (req, res) => {
 // 更新指定id角色
 exports.update = async (req, res) => {
   try {
-    let id = req.params.id;
+    let _id = req.params.id;
     let roleDoc = req.body;
-    const data = await roleModel.findByIdAndUpdate(id, roleDoc, { new: true });
+    const data = await roleModel.findByIdAndUpdate(_id, roleDoc, { new: true });
     if (!data) return res.status(400).json({ msg: '更新失败!' });
     res.status(201).json({
       msg: '更新成功!',
@@ -58,8 +58,8 @@ exports.update = async (req, res) => {
 // 删除指定id角色
 exports.delete = async (req, res) => {
   try {
-    let id = req.params.id;
-    const data = await roleModel.findByIdAndDelete(id);
+    let _id = req.params.id;
+    const data = await roleModel.findByIdAndDelete(_id);
     if (!data) return res.json({ msg: '删除失败!' });
     res.json({ msg: '删除成功!' });
   } catch (error) {
@@ -92,9 +92,9 @@ exports.one = async (req, res) => {
 // 给指定id角色分配角色
 exports.updateRoles = async (req, res) => {
   try {
-    let id = req.params.id;
+    let _id = req.params.id;
     let roleDoc = req.body;
-    const data = await roleModel.findByIdAndUpdate(id, roleDoc)
+    const data = await roleModel.findByIdAndUpdate(_id, roleDoc)
     if (!data) return res.status(400).json({ msg: '权限分配失败!' });
     res.status(201).json({
       msg: '权限分配成功!',

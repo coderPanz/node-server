@@ -60,8 +60,8 @@ exports.update = async (req, res) => {
 // 删除指定id用户
 exports.delete = async (req, res) => {
   try {
-    let id = req.params.id;
-    const data = await userModel.findByIdAndDelete(id);
+    let _id = req.params.id;
+    const data = await userModel.findByIdAndDelete(_id);
     if (!data) return res.json({ msg: '删除失败!' });
     res.json({ msg: '删除成功!' });
   } catch (error) {
@@ -75,8 +75,8 @@ exports.delete = async (req, res) => {
 // 根据id查询单个用户
 exports.one = async (req, res) => {
   try {
-    let id = req.params.id;
-    const data = await userModel.findById(id);
+    let _id = req.params.id;
+    const data = await userModel.findById(_id);
     if (!data) return res.status(404).json({ msg: '查询失败!' });
     res.status(200).json({
       msg: '查询成功!',
@@ -93,9 +93,9 @@ exports.one = async (req, res) => {
 // 给指定id用户分配角色
 exports.updateRoles = async (req, res) => {
   try {
-    let id = req.params.id;
+    let _id = req.params.id;
     let roles = req.body;
-    const data = await userModel.findByIdAndUpdate(id, roles);
+    const data = await userModel.findByIdAndUpdate(_id, roles);
     if (!data) return res.status(400).json({ msg: '角色分配失败!' });
     res.status(201).json({
       msg: '角色分配成功!',
