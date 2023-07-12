@@ -11,14 +11,14 @@ db(() => {
   const app = express(); // 创建应用实例
 
   // 注册全局中间件解析token: 在路由注册之前, 可以很容易地保护资源和 API 接口，有效防止未经授权的访问
-  // app.use(
-  //   jwt({
-  //     secret: jwtSecretKey, // 签名的密钥
-  //     algorithms: ["HS256"]
-  //   }).unless({
-  //     path: ['/api/login'], // 路径不经过token解析
-  //   })
-  // );
+  app.use(
+    jwt({
+      secret: jwtSecretKey, // 签名的密钥
+      algorithms: ["HS256"]
+    }).unless({
+      path: ['/api/login'], // 路径不经过token解析
+    })
+  );
 
   // 注册全局中间件, 允许跨域请求
   app.use(cors());

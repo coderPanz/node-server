@@ -13,17 +13,25 @@ const name = joi
 // 密码验证规则
 const password = joi
   .string()
-  .pattern(/^(?=.*[a-zA-Z])(?=.*\d).{3,8}$/)
+  .pattern(/^(?=.*[a-zA-Z])(?=.*\d).{3,12}$/)
   .min(3)
   .max(12)
   .required();
+
+const roles = joi
+  .string()
+
+const department = joi
+  .string()
 
 // 向外共享表单验证规则对象
 exports.formCheckObj = {
   // 校验req.body中的数据
   body: {
     name,
-    password
+    password,
+    roles,
+    department
   }
   // 校验req.query中的数据
   // 校验req.params中的数据

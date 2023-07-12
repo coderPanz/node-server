@@ -14,7 +14,7 @@ router.post('/login', validataUser, loginAdmin.login)
 const usersAdmin = require('../control/user')
 router
   .get('/user', usersAdmin.list) // 获取用户列表
-  .post('/user', validataUser,  usersAdmin.create) // 创建用户
+  .post('/user', validataUser, usersAdmin.create) // 创建用户
   .patch('/user/:id', usersAdmin.update) // 更新指定id用户, 更新的时候是部分更新所以不需要使用验证规则中间件(比如前端只修改名字, 密码不变)
   .delete('/user/:id', usersAdmin.delete) // 删除指定id用户
   .post('/user/:id', usersAdmin.one) // 获取指定id用户
