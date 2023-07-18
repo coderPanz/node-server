@@ -10,7 +10,7 @@ const departmentSchema = new mongoose.Schema({
     required: true
   },
   parentId: {
-    type: [mongoose.Schema.Types.ObjectId]
+    type: [mongoose.Schema.Types.ObjectId],
   },
   // 是否可用
   status: {

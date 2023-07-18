@@ -39,7 +39,7 @@ router
   .post('/department', departmentAdmin.create) // 创建部门
   .patch('/department/:id', departmentAdmin.update) // 更新部门
   .delete('/department/:id', departmentAdmin.delete) // 删除部门
-
+  .get('/department/:id', departmentAdmin.one) // 查询指定部门
 
 // 4. 权限管理路由分发(菜单权限)
 const menusAdmin = require('../control/menu')

@@ -74,7 +74,7 @@ exports.delete = async (req, res) => {
 exports.one = async (req, res) => {
   try {
     let _id = req.params.id
-    const data = await departmentModel.findById(_id);
+    const data = await departmentModel.findById(_id).populate({ path: 'parentId', model: 'department' })
     if (!data) return res.status(404).json({ msg: '查询失败!' });
     res.status(200).json({
       msg: '查询成功!',
