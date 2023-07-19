@@ -22,7 +22,16 @@ exports.list = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     let roleDoc = req.body;
-    const data = await roleModel.create(roleDoc);
+    // 对前端的数据继续处理符合创建格式后再继续创建操作
+    let newObj = { menus: [] }
+    for (const key in roleDoc) {
+      if(key !== 'name' && roleDoc[key] !== '') {
+        newObj.menus.push(roleDoc[key])
+      } else {
+        newObj[key] = roleDoc[key]
+      }
+    }
+    const data = await roleModel.create(newObj);
     if (!data) return res.status(500).json({ msg: '创建失败!' });
     res.status(201).json({
       msg: '创建成功!',

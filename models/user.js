@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    select: false
+    select: false // 表示不返回密码到前端
   },
   // 角色
   rolesId: {

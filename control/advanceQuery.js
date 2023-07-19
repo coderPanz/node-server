@@ -92,12 +92,13 @@ exports.roleQuery = async (req, res) => {
 
 exports.departmentQuery = async (req, res) => {
   try {
-    let { size, offset, id, name, status, createdAt } = req.body;
+    let { size, offset, id, name, status, createdAt, leader } = req.body;
     // 我先进行一层判断, 如果有值的话就做为查询的条件, 没有值的话就不需要作为查询条件
     const query = {};
     if (id) query._id = id;
     if (name) query.name = name;
     if(status === 1 || status === 0) query.status = status;
+    if(leader) query.leader = leader
     if (createdAt) {
       // 获取创建时间的范围
       const startDate = createdAt[0];
