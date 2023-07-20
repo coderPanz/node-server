@@ -1,7 +1,51 @@
 const mongoose = require('mongoose')
 
+// 定义二级子菜单: 该菜单做按钮权限
+const subTwoMenuSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  // 前端路由名称M
+  url: {
+    type: String,
+    default: null
+  },
+  // 上级菜单
+  parentId: {
+    type: [mongoose.Schema.Types.ObjectId]
+  },
+  // 菜单图标
+  icon: {
+    type: String,
+    default: ''
+  },
+  // 排序
+  sort: {
+    type: Number,
+    default: 0
+  },
+  // 类型
+  type: {
+    type: Number,
+  },
+  permission: {
+    type: String,
+  },
+  // 创建时间
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  // 更新时间
+  updatedAt: {
+    type: Date,
+    default: Date.now
+  }
+})
+
 // 定义子菜单 
-const submenuSchema = new mongoose.Schema({
+const subMenuSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -29,6 +73,10 @@ const submenuSchema = new mongoose.Schema({
   // 类型
   type: {
     type: Number,
+  },
+  // 二级子菜单
+  children:{
+    type: [subTwoMenuSchema]
   },
   // 创建时间
   createdAt: {
@@ -80,7 +128,7 @@ const menuSchema = new mongoose.Schema({
   },
   // 子菜单
   children: {
-    type: [submenuSchema] // 避免无限递归
+    type: [subMenuSchema] // 避免无限递归
   }
 })
 

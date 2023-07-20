@@ -22,7 +22,7 @@ exports.list = async (req, res) => {
 // 创建用户
 exports.create = async (req, res) => {
   try {
-    let { name, password, roles, department } = req.body;
+    let { name, password, department, roles } = req.body;
     password = md5(password);
     const data = await userModel.create({
       name: name,

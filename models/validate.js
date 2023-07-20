@@ -5,7 +5,7 @@ const joi = require("joi");
 // 用户名的验证规则
 const name = joi
   .string()
-  .min(3)
+  .min(2)
   .max(12)
   .required()
   .pattern(/^[\u4e00-\u9fa5a-zA-Z0-9]+$/);

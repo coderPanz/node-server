@@ -23,6 +23,7 @@ exports.create = async (req, res) => {
   try {
     let roleDoc = req.body;
     // 对前端的数据继续处理符合创建格式后再继续创建操作
+    console.log(roleDoc)
     let newObj = { menus: [] }
     for (const key in roleDoc) {
       if(key !== 'name' && roleDoc[key] !== '') {
@@ -103,6 +104,7 @@ exports.updateRoles = async (req, res) => {
   try {
     let _id = req.params.id;
     let roleDoc = req.body;
+
     const data = await roleModel.findByIdAndUpdate(_id, roleDoc)
     if (!data) return res.status(400).json({ msg: '权限分配失败!' });
     res.status(201).json({
