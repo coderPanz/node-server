@@ -50,7 +50,6 @@ router
   .delete('/menu/:id', menusAdmin.delete) // 删除指定id菜单
   .get('/menu/:id', menusAdmin.one) // 查询某个菜单
 
-
 // 高级查询
 const advanceQuery = require('../control/advanceQuery')
 router
@@ -60,4 +59,6 @@ router
 .post('/role//paginationQuery', advanceQuery.roleQuery)
 .post('/department//paginationQuery', advanceQuery.departmentQuery)
 .post('/menu//paginationQuery', advanceQuery.menuQuery)
+
+
 module.exports = router
