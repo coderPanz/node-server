@@ -58,7 +58,6 @@ router
 .post('/user//paginationQuery', advanceQuery.userQuery) 
 .post('/role//paginationQuery', advanceQuery.roleQuery)
 .post('/department//paginationQuery', advanceQuery.departmentQuery)
-.post('/menu//paginationQuery', advanceQuery.menuQuery)
 
 
 module.exports = router

@@ -6,7 +6,6 @@ exports.list = async (req, res) => {
   try {
     // 因为所有菜单都集中在一个表中, 所以我们只需要查找主菜单, 子菜单使用poplate来填充
     const ids = ["64a52f2e584f55b8dd09c9ce", "64a530ca52e855dee749a2f5", "64a53b9922efcc29618d2251", "64a53c1b22efcc29618d225a"];
-
     const data = await menuModel.find({ _id: { $in: ids } }).populate({
       path: 'children',
       populate: {
