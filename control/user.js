@@ -23,6 +23,8 @@ exports.list = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     let { name, password, department, roles } = req.body;
+    console.log(password)
+    console.log('的发生发撒发')
     password = md5(password);
     const data = await userModel.create({
       name: name,
