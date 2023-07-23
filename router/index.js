@@ -50,6 +50,11 @@ router
   .delete('/menu/:id', menusAdmin.delete) // 删除指定id菜单
   .get('/menu/:id', menusAdmin.one) // 查询某个菜单
 
+// 5. 商品管理路由分发
+const productAdmin = require('../control/product/product-count') 
+router
+  .get('/goods/count/list', productAdmin.list) // 获取
+  .post('/goods/count', productAdmin.create) // 创建
 // 高级查询
 const advanceQuery = require('../control/advanceQuery')
 router
@@ -58,6 +63,6 @@ router
 .post('/user//paginationQuery', advanceQuery.userQuery) 
 .post('/role//paginationQuery', advanceQuery.roleQuery)
 .post('/department//paginationQuery', advanceQuery.departmentQuery)
-
+.post('/menu//paginationQuery', advanceQuery.menuQuery)
 
 module.exports = router
