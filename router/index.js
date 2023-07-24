@@ -55,6 +55,12 @@ const productAdmin = require('../control/product/product-count')
 router
   .get('/goods/count/list', productAdmin.list) // 获取
   .post('/goods/count', productAdmin.create) // 创建
+
+// 6. 手机型号及其销量
+const productTypeSaleAdmin = require('../control/product/product-type-sale')
+router
+  .get('/goods/count/type-sale', productTypeSaleAdmin.list)
+  .post('/goods/count/type-sale', productTypeSaleAdmin.create)
 // 高级查询
 const advanceQuery = require('../control/advanceQuery')
 router
