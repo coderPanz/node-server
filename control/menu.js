@@ -55,7 +55,6 @@ exports.update = async (req, res) => {
       data: data
     })
   } catch (error) {
-    console.log(error)
     res.json({
       msg: '更新失败!',
       err: error

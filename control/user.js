@@ -23,8 +23,6 @@ exports.list = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     let { name, password, department, roles } = req.body;
-    console.log(password)
-    console.log('的发生发撒发')
     password = md5(password);
     const data = await userModel.create({
       name: name,
@@ -76,7 +74,6 @@ exports.delete = async (req, res) => {
     const importentId = stringArray.find(
       (item) => item === "64a52cb6d225ead824895477"
     );
-    console.log(importentId);
     if (importentId === "64a52cb6d225ead824895477") {
       res.json({
         msg: "权限不足, 无法删除!",

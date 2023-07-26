@@ -61,6 +61,30 @@ const productTypeSaleAdmin = require('../control/product/product-type-sale')
 router
   .get('/goods/count/type-sale', productTypeSaleAdmin.list)
   .post('/goods/count/type-sale', productTypeSaleAdmin.create)
+
+// 7. 不同城市的销量数据
+const productCountrySalesAdmin = require('../control/product/product-country-sales')
+router
+  .get('/goods/count/country', productCountrySalesAdmin.list)
+  .post('/goods/count/country', productCountrySalesAdmin.create)
+
+// 8. 商品类型
+const productTypeAdmin = require('../control/product/product-type')
+router
+  .get('/productType', productTypeAdmin.list)
+  .post('/productType', productTypeAdmin.create)
+  .delete('/productType/:id', productTypeAdmin.delete)
+  .patch('/productType/:id', productTypeAdmin.update)
+  
+// 9. 商品信息
+const productInfosAdmin = require('../control/product/product-infos')
+router
+  .get('/productInfos', productInfosAdmin.list)
+  .post('/productInfos', productInfosAdmin.create)
+  .delete('/productInfos/:id', productInfosAdmin.delete)
+  .patch('/productInfos/:id', productInfosAdmin.update)
+
+
 // 高级查询
 const advanceQuery = require('../control/advanceQuery')
 router
@@ -70,5 +94,7 @@ router
 .post('/role//paginationQuery', advanceQuery.roleQuery)
 .post('/department//paginationQuery', advanceQuery.departmentQuery)
 .post('/menu//paginationQuery', advanceQuery.menuQuery)
+.post('/productType//paginationQuery', advanceQuery.productType)
+.post('/productInfos//paginationQuery', advanceQuery.productInfos)
 
 module.exports = router

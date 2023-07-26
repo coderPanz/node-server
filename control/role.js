@@ -49,13 +49,13 @@ exports.update = async (req, res) => {
   try {
     let _id = req.params.id;
     let roleDoc = req.body;
+
     const keys = Object.keys(roleDoc);
     const menus = keys.filter(key => !isNaN(parseInt(key))).map(key => roleDoc[key])
     const newDoc = {
       menus,
       name: roleDoc.name
     }
-    console.log(newDoc)
     const data = await roleModel.findByIdAndUpdate(_id, newDoc, { new: true });
     if (!data) return res.status(400).json({ msg: '更新失败!' });
     res.status(201).json({
@@ -104,7 +104,6 @@ exports.one = async (req, res) => {
       data: data,
     });
   } catch (error) {
-    console.log(error)
     res.json({
       msg: '查询失败!',
       err: error

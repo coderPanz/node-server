@@ -81,7 +81,6 @@ exports.one = async (req, res) => {
       data: data,
     });
   } catch (error) {
-    console.log(error)
     res.json({
       msg: '查询失败!',
       err: error
