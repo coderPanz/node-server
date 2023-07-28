@@ -20,7 +20,6 @@ exports.list = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     let productInfos = req.body;
-    // console.log(productInfos)
     // 对数据进行处理, 把_id对应的文档的name赋值该type
     const newObj = {};
     for (const key in productInfos) {

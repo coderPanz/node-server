@@ -21,8 +21,26 @@ exports.list = async (req, res) => {
 // 创建部门
 exports.create = async (req, res) => {
   try {
+    // 前端(创建/更新)传来的上级部门Id转换为上级部门名称返回到前端进行更好的展示
     let departmentDoc = req.body;
-    const data = await departmentModel.create(departmentDoc);
+    const newObj = { parentName: '' }
+    for (const key in departmentDoc) {
+      if(key === 'parentId') {
+        const _id = departmentDoc[key]
+        const data = await departmentModel.findById(_id)
+        newObj.parentName = data.name
+      }
+      if(
+        key !== "__v" &&
+        key !== "updatedAt" &&
+        key !== "createdAt" &&
+        key !== "_id" &&
+        key !== "parentName"
+      ) {
+        newObj[key] = departmentDoc[key]
+      }
+    }
+    const data = await departmentModel.create(newObj);
     if (!data) return res.status(500).json({ msg: '创建失败!' });
     res.status(201).json({
       msg: '创建成功!',
@@ -41,7 +59,27 @@ exports.update = async (req, res) => {
   try {
     let _id = req.params.id;
     let departmentDoc = req.body;
-    const data = await departmentModel.findByIdAndUpdate(_id, departmentDoc, { new: true });
+
+    // 前端(创建/更新)传来的上级部门Id转换为上级部门名称返回到前端进行更好的展示
+    const newObj = { parentName: '' }
+    for (const key in departmentDoc) {
+      if(key === 'parentId') {
+        const _id = departmentDoc[key]
+        const data = await departmentModel.findById(_id)
+        newObj.parentName = data.name
+      }
+      if(
+        key !== "__v" &&
+        key !== "updatedAt" &&
+        key !== "createdAt" &&
+        key !== "_id" &&
+        key !== "parentName"
+      ) {
+        newObj[key] = departmentDoc[key]
+      }
+    }
+
+    const data = await departmentModel.findByIdAndUpdate(_id, newObj, { new: true });
     if (!data) return res.status(400).json({ msg: '更新失败!' });
     res.status(201).json({
       msg: '更新成功!',

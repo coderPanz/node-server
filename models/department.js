@@ -12,6 +12,9 @@ const departmentSchema = new mongoose.Schema({
   parentId: {
     type: [mongoose.Schema.Types.ObjectId],
   },
+  parentName: {
+    type: String
+  },
   // 是否可用
   status: {
     type: Number,
