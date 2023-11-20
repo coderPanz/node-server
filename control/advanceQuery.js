@@ -32,7 +32,7 @@ exports.menuTree = async (req, res) => {
 
     // 3. 递归菜单树找到角色对应的权限的菜单树
     function getPermissionList(allMenus, roleMenus) {
-      let rolePermissionList = [];
+      let rolePermissionList = []; // 避免循环依赖, 该变量不能放在函数外面
       for (const item of allMenus) {
         if(roleMenus.includes(item._id.toString())) {
           const filteredMenu = {

@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+
 // 导入验证规则对象
 const { formCheckObj } = require('../models/validate')
 // 安装 @escook/express-joi 中间件，来实现自动对表单数据进行验证的功能

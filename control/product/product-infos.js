@@ -56,7 +56,6 @@ exports.update = async (req, res) => {
   try {
     let _id = req.params.id;
     let productTypeDoc = req.body;
-    // console.log(productTypeDoc);
     // 对数据进行处理, 把_id对应的文档的name赋值该type
     const newObj = {};
     for (const key in productTypeDoc) {
@@ -76,7 +75,7 @@ exports.update = async (req, res) => {
         newObj[key] = productTypeDoc[key];
       }
     }
-    // console.log(newObj)
+
     const data = await productInfosModel.findByIdAndUpdate(_id, newObj, {
       new: true,
     });
