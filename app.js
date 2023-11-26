@@ -33,7 +33,7 @@ db(() => {
   app.use("/api", adminRouter);
 
   // 配置错误级别中间件: 必须注册在所有路由之后
-  app.use((err, req, res, next) => {
+  app.use((err, res) => {
     console.log("服务器发生了错误: " + err.message); // 服务端提示
     res.send("服务器发生了错误: " + err.message); // 客户端提示
   });
