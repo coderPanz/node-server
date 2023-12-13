@@ -11,6 +11,7 @@ const validataUser = expressJoi(formCheckObj)
 const loginAdmin = require('../control/login')
 router.post('/login', validataUser, loginAdmin.login)
  
+
 // 1、用户管理路由分发
 const usersAdmin = require('../control/user')
 router
@@ -91,11 +92,14 @@ const advanceQuery = require('../control/advanceQuery')
 router
 .get('/role/:id/menu', advanceQuery.menuTree) // 获取角色菜单树
 // 注意这里的空出的这个位置为:id, 我们没有加入动态id所以需要留一个占位
-.post('/user//paginationQuery', advanceQuery.userQuery) 
-.post('/role//paginationQuery', advanceQuery.roleQuery)
-.post('/department//paginationQuery', advanceQuery.departmentQuery)
-.post('/menu//paginationQuery', advanceQuery.menuQuery)
-.post('/productType//paginationQuery', advanceQuery.productType)
-.post('/productInfos//paginationQuery', advanceQuery.productInfos)
+
+router
+.post('/userpaginationQuery', advanceQuery.userQuery)
+.post('/role/paginationQuery', advanceQuery.roleQuery)
+.post('/department/paginationQuery', advanceQuery.departmentQuery)
+.post('/menu/paginationQuery', advanceQuery.menuQuery)
+.post('/productType/paginationQuery', advanceQuery.productType)
+.post('/productInfos/paginationQuery', advanceQuery.productInfos)
+
 
 module.exports = router

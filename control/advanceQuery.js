@@ -4,7 +4,7 @@ const userModel = require('../models/user')
 const departmentModel = require('../models/department')
 const productTypeModel = require('../models/product/product-type')
 const productInfosModel = require('../models/product/product-infos')
-
+const mongoose = require('mongoose');
 
 // 获取角色对应权限的菜单树
 exports.menuTree = async (req, res) => {
@@ -68,10 +68,10 @@ exports.menuTree = async (req, res) => {
 
 // 按条件查询: 根据前端的特定条件进行查询
 // 分页查询
+
 exports.userQuery = async (req, res) => {
   try {
     let { size, offset, id, name, status, createdAt } = req.body;
-    
     // 我先进行一层判断, 如果有值的话就做为查询的条件, 没有值的话就不需要作为查询条件
     const query = {};
     if (id) query._id = id;
@@ -103,6 +103,7 @@ exports.userQuery = async (req, res) => {
 exports.roleQuery = async (req, res) => {
   try {
     let { size, offset, id, name, status, createdAt } = req.body;
+
     // 我先进行一层判断, 如果有值的话就做为查询的条件, 没有值的话就不需要作为查询条件
     const query = {};
     if (id) query._id = id;
