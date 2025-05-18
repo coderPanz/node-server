@@ -1,0 +1,122 @@
+{
+    "_id": ObjectId("64ba1910f2f00d5ca895261b"),
+    "name": "技术文档",
+    "url": "/main/system/document",
+    "parentId": ObjectId("64a52f2e584f55b8dd09c9ce"),
+    "children": [ObjectId("64ba1c78f2f00d5ca895262a")],
+    "createdAt": "2023-07-21T05:35:12.534Z",
+    "updatedAt": "2023-07-21T05:35:12.534Z",
+    "__v": 0,
+    "sort": 2
+}
+{
+    "_id": ObjectId("64ba1a69f2f00d5ca895261d"),
+    "name": "商品类别",
+    "url": "/main/product/type",
+    "parentId": ObjectId("64a53b9922efcc29618d2251"),
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:40:57.345Z",
+    "updatedAt": "2023-07-21T05:40:57.345Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1a72f2f00d5ca895261f"),
+    "name": "商品信息",
+    "url": "/main/product/infos",
+    "parentId": ObjectId("64a53b9922efcc29618d2251"),
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:41:06.541Z",
+    "updatedAt": "2023-07-21T05:41:06.541Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1b02f2f00d5ca8952622"),
+    "name": "vue3",
+    "url": "/main/technology/vue3",
+    "parentId": ObjectId("64a53c1b22efcc29618d225a"),
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:43:30.773Z",
+    "updatedAt": "2023-07-21T05:43:30.773Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1b31f2f00d5ca8952624"),
+    "name": "ts",
+    "url": "/main/technology/ts",
+    "parentId": ObjectId("64a53c1b22efcc29618d225a"),
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:44:17.981Z",
+    "updatedAt": "2023-07-21T05:44:17.981Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1b70f2f00d5ca8952626"),
+    "name": "NodeJS",
+    "url": "/main/technology/node.js",
+    "parentId": ObjectId("64a53c1b22efcc29618d225a"),
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:45:20.102Z",
+    "updatedAt": "2023-07-21T05:45:20.102Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1b91f2f00d5ca8952628"),
+    "name": "vite",
+    "url": "/main/technology/vite",
+    "parentId": ObjectId("64a53c1b22efcc29618d225a"),
+    "icon": "",
+    "sort": 2,
+    "children": [],
+    "createdAt": "2023-07-21T05:45:53.427Z",
+    "updatedAt": "2023-07-21T05:45:53.427Z",
+    "__v": 0
+}
+{
+    "_id": ObjectId("64ba1f7ff2f00d5ca895264b"),
+    "name": "用户管理",
+    "url": "/main/admin/user",
+    "parentId": ObjectId("64a530ca52e855dee749a2f5"),
+    "children": [],
+    "createdAt": "2023-07-21T06:02:39.038Z",
+    "updatedAt": "2023-07-21T06:02:39.038Z",
+    "__v": 0,
+    "sort": 2.0
+}
+{
+    "_id": ObjectId("64ba1fc4f2f00d5ca895264d"),
+    "name": "部门管理",
+    "url": "/main/admin/department",
+    "parentId": ObjectId("64a530ca52e855dee749a2f5"),
+    "children": [],
+    "createdAt": "2023-07-21T06:03:48.165Z",
+    "updatedAt": "2023-07-21T06:03:48.165Z",
+    "__v": 0,
+    "sort": 2.0
+}
+{
+    "_id": ObjectId("64ba1ffff2f00d5ca895264f"),
+    "name": "角色管理",
+    "url": "/main/admin/role",
+    "parentId": ObjectId("64a530ca52e855dee749a2f5"),
+    "children": [],
+    "createdAt": "2023-07-21T06:04:47.017Z",
+    "updatedAt": "2023-07-21T06:04:47.017Z",
+    "__v": 0,
+    "sort": 2.0
+}
+{
+    "_id": ObjectId("64ba2051f2f00d5ca8952651"),
+    "name": "菜单管理",
+    "url": "/main/admin/menu",
+    "parentId": ObjectId("64a530ca52e855dee749a2f5"),
+    "children": [],
+    "createdAt": "2023-07-21T06:06:09.392Z",
+    "updatedAt": "2023-07-21T06:06:09.392Z",
+    "__v": 0,
+    "sort": 2.0
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "_id": ObjectId("64ba1c78f2f00d5ca895262a"),
+    "name": "创建用户",
+    "type": 3,
+    "permission": "system-user-create",
+    "createdAt": "2023-07-21T05:49:44.088Z",
+    "updatedAt": "2023-07-21T05:49:44.088Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1d31f2f00d5ca895262d"),
+    "name": "删除用户",
+    "type": 3,
+    "permission": "system-user-delete",
+    "createdAt": "2023-07-21T05:52:49.241Z",
+    "updatedAt": "2023-07-21T05:52:49.241Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1d6ef2f00d5ca895262f"),
+    "name": "更新用户",
+    "type": 3,
+    "permission": "system-user-update",
+    "createdAt": "2023-07-21T05:53:50.637Z",
+    "updatedAt": "2023-07-21T05:53:50.637Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1d95f2f00d5ca8952631"),
+    "name": "查找用户",
+    "type": 3,
+    "permission": "system-user-find",
+    "createdAt": "2023-07-21T05:54:29.101Z",
+    "updatedAt": "2023-07-21T05:54:29.101Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1db8f2f00d5ca8952633"),
+    "name": "创建部门",
+    "type": 3,
+    "permission": "system-department-create",
+    "createdAt": "2023-07-21T05:55:04.712Z",
+    "updatedAt": "2023-07-21T05:55:04.712Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1dd5f2f00d5ca8952635"),
+    "name": "删除部门",
+    "type": 3,
+    "permission": "system-department-delete",
+    "createdAt": "2023-07-21T05:55:33.948Z",
+    "updatedAt": "2023-07-21T05:55:33.948Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1df3f2f00d5ca8952637"),
+    "name": "更新部门",
+    "type": 3,
+    "permission": "system-department-update",
+    "createdAt": "2023-07-21T05:56:03.521Z",
+    "updatedAt": "2023-07-21T05:56:03.521Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1e12f2f00d5ca8952639"),
+    "name": "查找部门",
+    "type": 3,
+    "permission": "system-department-find",
+    "createdAt": "2023-07-21T05:56:34.765Z",
+    "updatedAt": "2023-07-21T05:56:34.765Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1e41f2f00d5ca895263b"),
+    "name": "创建角色",
+    "type": 3,
+    "permission": "system-role-create",
+    "createdAt": "2023-07-21T05:57:21.129Z",
+    "updatedAt": "2023-07-21T05:57:21.129Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1e5ef2f00d5ca895263d"),
+    "name": "删除角色",
+    "type": 3,
+    "permission": "system-role-delete",
+    "createdAt": "2023-07-21T05:57:50.055Z",
+    "updatedAt": "2023-07-21T05:57:50.055Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1e77f2f00d5ca895263f"),
+    "name": "更新角色",
+    "type": 3,
+    "permission": "system-role-update",
+    "createdAt": "2023-07-21T05:58:15.495Z",
+    "updatedAt": "2023-07-21T05:58:15.495Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1e8df2f00d5ca8952641"),
+    "name": "查找角色",
+    "type": 3,
+    "permission": "system-role-find",
+    "createdAt": "2023-07-21T05:58:37.668Z",
+    "updatedAt": "2023-07-21T05:58:37.668Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1eb4f2f00d5ca8952643"),
+    "name": "创建菜单",
+    "type": 3,
+    "permission": "system-menu-create",
+    "createdAt": "2023-07-21T05:59:16.28Z",
+    "updatedAt": "2023-07-21T05:59:16.28Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1ec5f2f00d5ca8952645"),
+    "name": "删除菜单",
+    "type": 3,
+    "permission": "system-menu-delete",
+    "createdAt": "2023-07-21T05:59:33.689Z",
+    "updatedAt": "2023-07-21T05:59:33.689Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1edbf2f00d5ca8952647"),
+    "name": "更新菜单",
+    "type": 3,
+    "permission": "system-menu-update",
+    "createdAt": "2023-07-21T05:59:55.611Z",
+    "updatedAt": "2023-07-21T05:59:55.611Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ba1ef1f2f00d5ca8952649"),
+    "name": "查找菜单",
+    "type": 3,
+    "permission": "system-menu-find",
+    "createdAt": "2023-07-21T06:00:17.404Z",
+    "updatedAt": "2023-07-21T06:00:17.404Z",
+    "__v": 0
+  }
+]

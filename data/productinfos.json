@@ -1,0 +1,72 @@
+[
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d2e"),
+    "name": "小米手机",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d989ce63c679d0e9e8cf64397cef588a.png?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "手机",
+    "stock": 535366,
+    "createdAt": "2023-07-26T04:25:02.398Z",
+    "updatedAt": "2023-07-26T04:25:02.398Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d2f"),
+    "name": "小米电视",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b656495821144d92bd932d91eedcf659.png?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "家电",
+    "stock": 231231,
+    "createdAt": "2023-07-26T04:25:02.4Z",
+    "updatedAt": "2023-07-26T04:25:02.4Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d30"),
+    "name": "小米电冰箱",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e6fe32cdaf14e104013384d89100f9c6.png?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "家电",
+    "stock": 121212,
+    "createdAt": "2023-07-26T04:25:02.4Z",
+    "updatedAt": "2023-07-26T04:25:02.4Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d31"),
+    "name": "小米手环",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c8c904c349d47cbcb4eefc803a66544.jpg?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "穿戴",
+    "stock": 435643,
+    "createdAt": "2023-07-26T04:25:02.4Z",
+    "updatedAt": "2023-07-26T04:25:02.4Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d32"),
+    "name": "小米太阳镜",
+    "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d521bd58668f66c50562b8fa8949f67c.jpg?thumb=1&w=50&h=50",
+    "type": "生活",
+    "stock": 212111,
+    "createdAt": "2023-07-26T04:25:02.401Z",
+    "updatedAt": "2023-07-26T04:25:02.401Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0a01e91ae345210366d33"),
+    "name": "小米平板",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c78e75c31419d36353d29456450eee26.png?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "平板",
+    "stock": 112111,
+    "createdAt": "2023-07-26T04:25:02.401Z",
+    "updatedAt": "2023-07-26T04:25:02.401Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c0d1333c900e0f790e4970"),
+    "name": "小米电冰箱",
+    "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e6fe32cdaf14e104013384d89100f9c6.png?thumb=1&w=50&h=50&f=webp&q=90",
+    "type": "家电",
+    "stock": 121212,
+    "createdAt": "2023-07-26T07:54:27.673Z",
+    "updatedAt": "2023-07-26T07:54:27.673Z",
+    "__v": 0
+  }
+]

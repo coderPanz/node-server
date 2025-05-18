@@ -1,0 +1,60 @@
+[
+  {
+    "_id": ObjectId("64ad2778d1021f1512299bd4"),
+    "name": "哇额",
+    "password": "",
+    "rolesId": [
+      ObjectId("64ad2778d1021f1512299bd4"),
+      ObjectId("64a52cb6d225ead824895477")
+    ],
+    "departmentId": [ObjectId("64ad26d324fe1ef5db5f948b")],
+    "status": 1,
+    "createdAt": "2023-07-11T09:57:12.144Z",
+    "updatedAt": "2023-07-11T09:57:12.144Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64ae8194e38eec309ca49f3e"),
+    "name": "coderPanz",
+    "password": "235a354568bd8684061bc51c29b58903",
+    "rolesId": [ObjectId("64a52cb6d225ead824895477")],
+    "departmentId": [ObjectId("64bb950edb76983ec1056592")],
+    "status": 1,
+    "createdAt": "2023-07-12T10:33:56.784Z",
+    "updatedAt": "2023-07-12T10:33:56.784Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64aead7582e328202e1db5d3"),
+    "name": "爱我还是他",
+    "password": "",
+    "rolesId": [ObjectId("64a52cb6d225ead824895477")],
+    "departmentId": [ObjectId("64a6b379ba85184e7a58f195")],
+    "status": 1,
+    "createdAt": "2023-07-12T13:41:09.859Z",
+    "updatedAt": "2023-07-12T13:41:09.859Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bb7d0da0b3998719233296"),
+    "name": "周大侠",
+    "password": "",
+    "rolesId": [ObjectId("64a52cb6d225ead824895477")],
+    "departmentId": [ObjectId("64a6b38aba85184e7a58f197")],
+    "status": 1,
+    "createdAt": "2023-07-22T06:54:05.73Z",
+    "updatedAt": "2023-07-22T06:54:05.73Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("65252f9a1979aac3843ebc99"),
+    "name": "coder123",
+    "password": "",
+    "rolesId": [ObjectId("64a52cb6d225ead824895477")],
+    "departmentId": [ObjectId("64a6b38aba85184e7a58f197")],
+    "status": 1,
+    "createdAt": "2023-10-10T11:03:54.185Z",
+    "updatedAt": "2023-10-10T11:03:54.185Z",
+    "__v": 0
+  }
+]

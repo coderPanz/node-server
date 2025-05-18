@@ -1,0 +1,104 @@
+{
+  "_id": ObjectId("64be868f01a295f998d1035e"),
+  "address": "上海",
+  "count": 34233,
+  "createdAt": "2023-07-24T14:11:27.563Z",
+  "updatedAt": "2023-07-24T14:11:27.563Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d1035f"),
+  "address": "北京",
+  "count": 69903,
+  "createdAt": "2023-07-24T14:11:27.565Z",
+  "updatedAt": "2023-07-24T14:11:27.565Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10360"),
+  "address": "广州",
+  "count": 78965,
+  "createdAt": "2023-07-24T14:11:27.566Z",
+  "updatedAt": "2023-07-24T14:11:27.566Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10361"),
+  "address": "深圳",
+  "count": 32345,
+  "createdAt": "2023-07-24T14:11:27.566Z",
+  "updatedAt": "2023-07-24T14:11:27.566Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10364"),
+  "address": "成都",
+  "count": 33322,
+  "createdAt": "2023-07-24T14:11:27.567Z",
+  "updatedAt": "2023-07-24T14:11:27.567Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10365"),
+  "address": "天津",
+  "count": 23232,
+  "createdAt": "2023-07-24T14:11:27.567Z",
+  "updatedAt": "2023-07-24T14:11:27.567Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10366"),
+  "address": "沈阳",
+  "count": 33234,
+  "createdAt": "2023-07-24T14:11:27.567Z",
+  "updatedAt": "2023-07-24T14:11:27.567Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10367"),
+  "address": "吉林",
+  "count": 12121,
+  "createdAt": "2023-07-24T14:11:27.567Z",
+  "updatedAt": "2023-07-24T14:11:27.567Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10368"),
+  "address": "苏州",
+  "count": 50676,
+  "createdAt": "2023-07-24T14:11:27.568Z",
+  "updatedAt": "2023-07-24T14:11:27.568Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10369"),
+  "address": "南京",
+  "count": 44423,
+  "createdAt": "2023-07-24T14:11:27.568Z",
+  "updatedAt": "2023-07-24T14:11:27.568Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d1036a"),
+  "address": "武汉",
+  "count": 37878,
+  "createdAt": "2023-07-24T14:11:27.568Z",
+  "updatedAt": "2023-07-24T14:11:27.568Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10362"),
+  "address": "贵阳",
+  "count": 54322,
+  "createdAt": "2023-07-24T14:11:27.566Z",
+  "updatedAt": "2023-07-24T14:11:27.566Z",
+  "__v": 0
+}
+{
+  "_id": ObjectId("64be868f01a295f998d10363"),
+  "address": "重庆",
+  "count": 34523,
+  "createdAt": "2023-07-24T14:11:27.566Z",
+  "updatedAt": "2023-07-24T14:11:27.566Z",
+  "__v": 0
+}

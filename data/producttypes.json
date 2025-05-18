@@ -1,0 +1,61 @@
+[
+  {
+    "_id": ObjectId("64bfead88fd3e524708990ec"),
+    "name": "平板",
+    "type": 2,
+    "createdAt": "2023-07-25T15:31:36.107Z",
+    "updatedAt": "2023-07-25T15:31:36.107Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990ed"),
+    "name": "穿戴",
+    "type": 3,
+    "createdAt": "2023-07-25T15:31:36.107Z",
+    "updatedAt": "2023-07-25T15:31:36.107Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990ee"),
+    "name": "家电",
+    "type": 4,
+    "createdAt": "2023-07-25T15:31:36.108Z",
+    "updatedAt": "2023-07-25T15:31:36.108Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990f1"),
+    "name": "生活",
+    "type": 7,
+    "createdAt": "2023-07-25T15:31:36.108Z",
+    "updatedAt": "2023-07-25T15:31:36.108Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990ef"),
+    "name": "笔记本",
+    "type": 5,
+    "createdAt": "2023-07-25T15:31:36.108Z",
+    "updatedAt": "2023-07-25T15:31:36.108Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990f0"),
+    "name": "配件",
+    "type": 6,
+    "createdAt": "2023-07-25T15:31:36.108Z",
+    "updatedAt": "2023-07-25T15:31:36.108Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bfead88fd3e524708990eb"),
+    "name": "手机",
+    "type": 1,
+    "createdAt": "2023-07-25T15:31:36.107Z",
+    "updatedAt": "2023-07-25T15:31:36.107Z",
+    "__v": 0
+  }
+]
+
+
+改为json格式，并且将所有 _id: "xxx" 改为 ObjectId("xxx") 的形式，并且去掉 $date 以及包裹它们的 {}

@@ -1,3 +1,12 @@
+/**
+  Author: qs
+  Date: 2024-11-22 16:28:27
+  LastEditTime: 2025-03-13 20:30:17
+  LastEditors: qs
+  Description: 
+  FilePath: /node-server/models/product/product-type-sale.js
+  
+ */
 const mongoose = require('mongoose')
 
 const productTypeSaleSchema = new mongoose.Schema([{

@@ -1,0 +1,86 @@
+[
+  {
+    "_id": ObjectId("64a6b38aba85184e7a58f197"),
+    "name": "设计部",
+    "leader": "coderPanz",
+    "parentId": [ObjectId("64ad26d324fe1ef5db5f948b")],
+    "status": 1,
+    "createdAt": "2023-07-06T12:28:58.707Z",
+    "updatedAt": "2023-07-06T12:28:58.707Z",
+    "__v": 0,
+    "parentName": "暂无部门"
+  },
+  {
+    "_id": ObjectId("64a6b392ba85184e7a58f199"),
+    "name": "市场部",
+    "leader": "coderPanz",
+    "parentId": [ObjectId("64a6b392ba85184e7a58f199")],
+    "status": 1,
+    "createdAt": "2023-07-06T12:29:06.61Z",
+    "updatedAt": "2023-07-06T12:29:06.61Z",
+    "__v": 0,
+    "parentName": "市场部"
+  },
+  {
+    "_id": ObjectId("64a6b39eba85184e7a58f19b"),
+    "name": "运营部",
+    "leader": "coderPanz",
+    "parentId": [ObjectId("64b6006f5834ddbeffa13859")],
+    "status": 1,
+    "createdAt": "2023-07-06T12:29:18.745Z",
+    "updatedAt": "2023-07-06T12:29:18.745Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64a6b3aaba85184e7a58f19d"),
+    "name": "职能部门",
+    "leader": "coderPanz",
+    "parentId": [ObjectId("64a6b3aaba85184e7a58f19d")],
+    "status": 1,
+    "createdAt": "2023-07-06T12:29:30.588Z",
+    "updatedAt": "2023-07-06T12:29:30.588Z",
+    "__v": 0,
+    "parentName": "职能部门"
+  },
+  {
+    "_id": ObjectId("64ad26d324fe1ef5db5f948b"),
+    "name": "暂无部门",
+    "leader": "coderPanz",
+    "parentId": [],
+    "status": 1,
+    "createdAt": "2023-07-11T09:54:27.005Z",
+    "updatedAt": "2023-07-11T09:54:27.005Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bb860558d3c3d0004c685d"),
+    "name": "问题割让给",
+    "leader": "各个",
+    "parentId": [ObjectId("64a6b38aba85184e7a58f197")],
+    "status": 1,
+    "createdAt": "2023-07-22T07:32:21.822Z",
+    "updatedAt": "2023-07-22T07:32:21.822Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c33e291259a1682ebe3fc8"),
+    "name": "啪啪啪",
+    "leader": "coder",
+    "parentId": [ObjectId("64a6b392ba85184e7a58f199")],
+    "status": 1,
+    "createdAt": "2023-07-28T04:03:53.752Z",
+    "updatedAt": "2023-07-28T04:03:53.752Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64c33ee507bddabf247e9945"),
+    "name": "纠纷调解部门",
+    "leader": "coder",
+    "parentId": [ObjectId("64a6b392ba85184e7a58f199")],
+    "parentName": "市场部",
+    "status": 1,
+    "createdAt": "2023-07-28T04:07:01.863Z",
+    "updatedAt": "2023-07-28T04:07:01.863Z",
+    "__v": 0
+  }
+]

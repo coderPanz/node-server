@@ -9,7 +9,7 @@ const validataUser = expressJoi(formCheckObj)
 
 // 用户登录路由分发
 const loginAdmin = require('../control/login')
-router.post('/login', validataUser, loginAdmin.login)
+router.post('/login', loginAdmin.login)
  
 
 // 1、用户管理路由分发
@@ -46,18 +46,21 @@ router
 // 4. 权限管理路由分发(菜单权限)
 const menusAdmin = require('../control/menu')
 router
-  .get('/menu', menusAdmin.list) // 获取权限列表
-  .post('/menu', menusAdmin.create) // 创建权限
-  .patch('/menu/:id', menusAdmin.update) // 更新指定id菜单
-  .delete('/menu/:id', menusAdmin.delete) // 删除指定id菜单
-  .get('/menu/:id', menusAdmin.one) // 查询某个菜单
+  .get("/menu", menusAdmin.list) // 获取权限列表
+  .post("/menu", menusAdmin.create) // 创建权限
+  .patch("/menu/:id", menusAdmin.update) // 更新指定id菜单
+  .delete("/menu/:id", menusAdmin.delete) // 删除指定id菜单
+  .get("/menu/:id", menusAdmin.one) // 查询某个菜单
+  .post("/setMainPage", menusAdmin.setMainPage) // 更新商城中心首页
+  .get("/getMainPage", menusAdmin.getMainPage)
 
 // 5. 商品管理路由分发
 const productAdmin = require('../control/product/product-count') 
 router
-  .get('/goods/count/list', productAdmin.list) // 获取
-  .post('/goods/count', productAdmin.create) // 创建
-
+  .get("/goods/count/list", productAdmin.list) // 获取
+  .post("/goods/count", productAdmin.create) // 创建
+  .post("/goods/count/:id", productAdmin.update) // 更新
+  .post("/goods/count/country/data", productAdmin.country) // 不同城市的销量数据
 // 6. 手机型号及其销量
 const productTypeSaleAdmin = require('../control/product/product-type-sale')
 router

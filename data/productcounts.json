@@ -1,0 +1,50 @@
+[
+  {
+    "_id": ObjectId("64bcd096175ffc9690c14d56"),
+    "keywords": "sale",
+    "title": "手机总销量",
+    "tips": "所有手机总销量",
+    "subTitle": "手机总销量",
+    "number1": 563263,
+    "number2": 563263,
+    "createdAt": "2023-07-23T07:02:46.605Z",
+    "updatedAt": "2023-07-23T07:02:46.605Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bcd096175ffc9690c14d57"),
+    "keywords": "favor",
+    "title": "手机收藏总量",
+    "tips": "所有手机收藏总量",
+    "subTitle": "手机收藏总量",
+    "number1": 965896,
+    "number2": 965896,
+    "createdAt": "2023-07-23T07:02:46.606Z",
+    "updatedAt": "2023-07-23T07:02:46.606Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bcd096175ffc9690c14d58"),
+    "keywords": "amount",
+    "title": "618手机总销售额",
+    "tips": "所有618手机总销售额",
+    "subTitle": "618手机总销售额",
+    "number1": 1689789000,
+    "number2": 1689789000,
+    "createdAt": "2023-07-23T07:02:46.606Z",
+    "updatedAt": "2023-07-23T07:02:46.606Z",
+    "__v": 0
+  },
+  {
+    "_id": ObjectId("64bcd096175ffc9690c14d59"),
+    "keywords": "inventory",
+    "title": "商品总库存",
+    "tips": "所有商品总库存",
+    "subTitle": "商品总库存",
+    "number1": 785478,
+    "number2": 785478,
+    "createdAt": "2023-07-23T07:02:46.606Z",
+    "updatedAt": "2023-07-23T07:02:46.606Z",
+    "__v": 0
+  }
+]
